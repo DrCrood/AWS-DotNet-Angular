@@ -1,0 +1,28 @@
+<h1>Upload files to S3!</h1>
+
+<div class="row" style="margin-bottom:15px;">
+  <div class="col-md-3">
+    <input type="file" #fileupload placeholder="Choose file" (change)="uploadFile(fileupload.files)" style="display:none;" multiple>
+    <button type="button" class="btn btn-success" (click)="fileupload.click()">Upload File</button>
+  </div>
+  <div class="col-md-4">
+    <span *ngIf="progress > 0">
+      {{progress}}%
+    </span>
+  </div>
+</div>
+
+
+
+<h2>AG Grid test</h2>
+
+<div>
+  <ag-grid-angular #agGrid style="width: 600px; height: 500px; column-width: auto"
+                   class="ag-theme-alpine"
+                   [rowData]="rowData"
+                   [columnDefs]="columnDefs"
+                   rowSelection="multiple">
+  </ag-grid-angular>
+</div>
+<button  (click)="DeleteSelectedRows()">Delete selected rows</button>
+

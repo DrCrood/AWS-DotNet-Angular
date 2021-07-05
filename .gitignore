@@ -1,0 +1,7 @@
+/DotNet5AWS/.vs
+/.git
+/DotNET5AWS/DotNET5AWS/bin/*
+/DotNET5AWS/DotNET5AWS/obj/*
+/DotNET5AWS/DotNET5AWS_Tests/bin/*
+/DotNET5AWS/DotNET5AWS_Tests/obj/*
+/DotNET5AWS/*.pdf
